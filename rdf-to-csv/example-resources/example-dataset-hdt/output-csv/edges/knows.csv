@@ -1,0 +1,3 @@
+uri|uri
+http://www.example.com/data#PERSON_1|http://www.example.com/data#PERSON_2
+http://www.example.com/data#PERSON_2|http://www.example.com/data#PERSON_1

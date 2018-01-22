@@ -1,0 +1,11 @@
+<http://www.example.com/data#PERSON_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.example.com/ontology#Manager> .
+<http://www.example.com/data#PERSON_2> <http://www.example.com/ontology#id> "2"^^<http://www.w3.org/2001/XMLSchema#long> .
+<http://www.example.com/data#PERSON_2> <http://www.example.com/ontology#birthdate> "1988-01-07"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.example.com/data#PERSON_2> <http://www.example.com/ontology#name> "Emanuele" .
+<http://www.example.com/data#PERSON_2> <http://www.example.com/ontology#surname> "Rosati" .
+<http://www.example.com/data#PERSON_2> <http://www.example.com/ontology#email> "e.rosati@email.com" .
+<http://www.example.com/data#PERSON_2> <http://www.example.com/ontology#email> "emanuele.rosati@email.com" .
+<http://www.example.com/data#PERSON_2> <http://www.example.com/ontology#insertDate> "2018-01-21"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.example.com/data#PERSON_2> <http://www.example.com/ontology#isAdmin> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.example.com/data#PERSON_2> <http://www.example.com/ontology#branchNumber> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.example.com/data#PERSON_2> <http://www.example.com/ontology#description> "The Boss" .

@@ -1,0 +1,4 @@
+uri|uri
+http://www.example.com/ontology#Employee|http://www.example.com/ontology#Person
+http://www.example.com/ontology#Manager|http://www.example.com/ontology#Employee
+http://www.example.com/ontology#Person|http://www.example.com/ontology#Thing

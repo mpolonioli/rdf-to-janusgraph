@@ -1,0 +1,227 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.example.com/ontology#"
+     xml:base="http://www.example.com/ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+	 
+	 
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+	
+	
+	
+	<!-- http://www.example.com/ontology#insertDate -->
+
+    <owl:AnnotationProperty rdf:about="http://www.example.com/ontology#insertDate">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:AnnotationProperty>
+	
+	
+	
+	<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+	 
+	 
+	 
+	<!-- http://www.example.com/ontology#knows -->
+	
+	<owl:ObjectProperty rdf:about="http://www.example.com/ontology#knows">
+		<rdfs:domain rdf:resource="http://www.example.com/ontology#Person"/>
+		<rdfs:range rdf:resource="http://www.example.com/ontology#Person"/>
+	</owl:ObjectProperty>
+	
+	
+	
+	<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+	 
+	 
+	 
+	<!-- http://www.example.com/ontology#id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/ontology#id">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.example.com/ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    </owl:DatatypeProperty>
+	
+	
+	<!-- http://www.example.com/ontology#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/ontology#name">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.example.com/ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+	
+	
+	<!-- http://www.example.com/ontology#surname -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/ontology#surname">
+        <rdfs:domain rdf:resource="http://www.example.com/ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+	
+	
+	<!-- http://www.example.com/ontology#email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/ontology#email">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.example.com/ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+	
+	
+	<!-- http://www.example.com/ontology#birthdate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/ontology#birthdate">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.example.com/ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+	
+	
+	<!-- http://www.example.com/ontology#isAdmin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/ontology#isAdmin">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.example.com/ontology#Employee"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+	
+	
+	<!-- http://www.example.com/ontology#branchNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/ontology#branchNumber">
+        <rdfs:domain rdf:resource="http://www.example.com/ontology#Manager"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+	
+	
+	<!-- http://www.example.com/ontology#description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/ontology#description">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.example.com/ontology#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+	
+	
+	<!-- http://www.example.com/ontology#propEntity1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/ontology#propEntity1">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.example.com/ontology#Entity1"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+	
+	
+	<!-- http://www.example.com/ontology#propEntity2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com/ontology#propEntity2">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.example.com/ontology#Entity2"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+	
+	
+    <!-- http:www.example.com/ontology#propEntity12 -->
+
+    <owl:DatatypeProperty rdf:about="http:www.example.com/ontology#propEntity12">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http:www.example.com/ontology#Entity1"/>
+					<rdf:Description rdf:about="http:www.example.com/ontology#Entity2"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+	
+	
+	
+	<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+	 
+	 
+	 
+	<!-- http://www.example.com/ontology#Thing -->
+	
+	<owl:Class rdf:about="http://www.example.com/ontology#Thing"/>
+	 
+	 
+	<!-- http://www.example.com/ontology#Person -->
+	
+	<owl:Class rdf:about="http://www.example.com/ontology#Person">
+		<rdfs:subClassOf rdf:resource="http://www.example.com/ontology#Thing"/>
+	</owl:Class>
+	
+	
+	<!-- http://www.example.com/ontology#Person -->
+	
+	<owl:Class rdf:about="http://www.example.com/ontology#Employee">
+		<rdfs:subClassOf rdf:resource="http://www.example.com/ontology#Person"/>
+	</owl:Class>
+	
+	
+	<!-- http://www.example.com/ontology#Manager -->
+	
+	<owl:Class rdf:about="http://www.example.com/ontology#Manager">
+		<rdfs:subClassOf rdf:resource="http://www.example.com/ontology#Employee"/>
+	</owl:Class>
+	
+	
+	<!-- http://www.example.com/ontology#SubEntity -->
+	
+	<owl:Class rdf:about="http://www.example.com/ontology#SubEntity">
+		<rdfs:subClassOf>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="http://www.example.com/ontology#Entity1"/>
+					<rdf:Description rdf:about="http://www.example.com/ontology#Entity2"/>
+				</owl:unionOf>
+			</owl:Class>
+        </rdfs:subClassOf>
+	</owl:Class>
+	
+	
+	<!-- http://www.example.com/ontology#Entity1 -->
+	
+	<owl:Class rdf:about="http://www.example.com/ontology#Entity1">
+		<rdfs:subClassOf rdf:resource="http://www.example.com/ontology#Thing"/>
+	</owl:Class>
+	
+	
+	<!-- http://www.example.com/ontology#Entity2 -->
+	
+	<owl:Class rdf:about="http://www.example.com/ontology#Entity2">
+		<rdfs:subClassOf rdf:resource="http://www.example.com/ontology#Thing"/>
+	</owl:Class>
+	
+</rdf:RDF>

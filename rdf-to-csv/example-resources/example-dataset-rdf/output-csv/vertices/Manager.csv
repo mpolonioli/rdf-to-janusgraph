@@ -1,0 +1,2 @@
+id|name|surname|email|birthdate|isAdmin|branchNumber|description|insertDate|uri
+2|Emanuele|Rosati|e.rosati@email.com;emanuele.rosati@email.com|1988-01-07|true|1|The Boss|2018-01-21|http://www.example.com/data#PERSON_2

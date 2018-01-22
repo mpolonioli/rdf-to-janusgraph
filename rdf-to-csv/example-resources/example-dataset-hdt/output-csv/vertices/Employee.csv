@@ -1,0 +1,2 @@
+id|name|surname|email|birthdate|isAdmin|description|insertDate|uri
+1|Mario|Rossi|m.rossi@email.com;mario.rossi@email.com|1994-06-21|false||2018-01-21|http://www.example.com/data#PERSON_1

@@ -1,0 +1,2 @@
+<http://www.example.com/data#PERSON_2> <http://www.example.com/ontology#knows> <http://www.example.com/data#PERSON_1> .
+<http://www.example.com/data#PERSON_1> <http://www.example.com/ontology#knows> <http://www.example.com/data#PERSON_2> .
