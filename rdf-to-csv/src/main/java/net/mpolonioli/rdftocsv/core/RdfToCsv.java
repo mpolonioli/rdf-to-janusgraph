@@ -151,7 +151,7 @@ public class RdfToCsv {
 			HashMap<String, String> edgeHasUri, 
 			HashMap<String, List<String>> vertexHasProperties) {
 		
-		createCsvClasses(hdtFile, classNames, classHasUri, outputDirVertexCsv);
+		createCsvClasses(classNames, classHasUri, outputDirVertexCsv);
 		createCsvVerticies(hdtFile, vertexNames, propertyNames, classHasUri, vertexHasProperties, propertyHasUri, propertyHasCardinality, outputDirVertexCsv, outputDirEdgeCsv);
 		createCsvSubClassOf(classHasUri, subClassOf, outputDirEdgeCsv);
 		createCsvEdges(hdtFile, edgeHasUri, outputDirEdgeCsv);
@@ -343,7 +343,6 @@ public class RdfToCsv {
 	 * create a CSV file for each classVertex
 	 */
 	private void createCsvClasses(
-			HDT hdtFile,
 			List<String> classNames,
 			HashMap<String, String> classHasUri,
 			File outputDir
@@ -351,7 +350,7 @@ public class RdfToCsv {
 	{
 		for(String className : classNames)
 		{
-			createClassCsv(hdtFile, className, classHasUri, outputDir);
+			createClassCsv(className, classHasUri, outputDir);
 		}
 	}
 	
@@ -359,7 +358,6 @@ public class RdfToCsv {
 	 * create a single CSV file for the given vertexClass 
 	 */
 	private File createClassCsv(
-			HDT hdtFile,
 			String className,
 			HashMap<String, String> classHasUri,
 			File outputDir
