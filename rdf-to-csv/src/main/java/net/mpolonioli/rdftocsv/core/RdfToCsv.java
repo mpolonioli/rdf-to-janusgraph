@@ -32,7 +32,6 @@ public class RdfToCsv {
 	
 	private List<File> vertexFiles = new ArrayList<>();
 	private List<File> edgeFiles = new ArrayList<>();
-	private List<String> uriList = new ArrayList<>();
 	
 	private long tripleVertexCount = 0;
 	private long triplePropertyCount = 0;
@@ -267,7 +266,6 @@ public class RdfToCsv {
 				tripleVertexCount++;
 				
 				String objUri = tripleString.getSubject().toString();
-				uriList.add(objUri);
 				
 				// add a line to the type.csv edge file
 				addLineType(objUri, classUri, outputEdgeDir);
